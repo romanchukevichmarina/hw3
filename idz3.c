@@ -21,7 +21,7 @@ int main() {
 
 double getX(double a) {
     double x0 = a/5;
-    while(mabs(a - x0 * x0 * x0 * x0 * x0) >= 0.1){
+    while(mabs(a - x0 * x0 * x0 * x0 * x0) >= 0.001){
         x0 = 0.2 * (4 * x0 + a / (x0 * x0 * x0 * x0));
     }
     return x0;
